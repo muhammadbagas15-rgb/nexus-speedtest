@@ -233,3 +233,13 @@ async function startSpeedTest() {
 elements.button.addEventListener("click", startSpeedTest);
 
 checkServer();
+
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .then(() => console.log("NEXUS PWA ready"))
+      .catch(error => console.error("PWA error:", error));
+  });
+}
+
