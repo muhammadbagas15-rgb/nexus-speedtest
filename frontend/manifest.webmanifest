@@ -1,0 +1,13 @@
+
+{
+  "id": "./",
+  "name": "NEXUS SPEEDTEST",
+  "short_name": "NEXUS",
+  "description": "Precision Network Measurement Platform",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#080d18",
+  "theme_color": "#080d18"
+}
