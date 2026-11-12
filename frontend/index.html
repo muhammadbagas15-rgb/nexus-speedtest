@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="NEXUS SPEEDTEST - Precision Network Measurement Platform">
+  <title>NEXUS SPEEDTEST</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-icon">N</span>
+        <span>NEXUS</span>
+      </div>
+      <span class="status"><i></i> SYSTEM READY</span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">PRECISION NETWORK MEASUREMENT</p>
+      <h1>Internet<br><span>Speed Test</span></h1>
+      <p class="subtitle">Measure your connection with precision.</p>
+
+      <div class="speed-display">
+        <div class="speed-value" id="download">0.00</div>
+        <div class="speed-unit">Mbps DOWNLOAD</div>
+        <div class="speed-divider"></div>
+        <div class="metrics">
+          <div>
+            <strong id="upload">0.00</strong>
+            <small>UPLOAD Mbps</small>
+          </div>
+          <div>
+            <strong id="ping">--</strong>
+            <small>LATENCY ms</small>
+          </div>
+          <div>
+            <strong id="jitter">--</strong>
+            <small>JITTER ms</small>
+          </div>
+        </div>
+      </div>
+
+      <button id="startTest" class="start-button">
+        START TEST
+      </button>
+
+      <p id="testStatus" class="test-status">Ready to measure your network</p>
+    </section>
+
+    <section class="server-panel">
+      <div>
+        <small>TEST SERVER</small>
+        <strong id="serverName">Local Test Node</strong>
+      </div>
+      <span class="server-tag">AUTO</span>
+    </section>
+
+    <footer>
+      NEXUS SPEEDTEST · PRECISION NETWORK MEASUREMENT
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
